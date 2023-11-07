@@ -1,13 +1,15 @@
-===================
+===============
+Getting started
+===============
+
 Initializing Sphinx
 ===================
 
 First of all, you'll need to initialize Sphinx in this project. For that, 
-create a `docs` directory. Your dirtree must look like this:
+create a ``docs`` directory. Your dirtree must look like this:
 
-.. code-block::
-    :caption: Original dir tree
-    :name: original-dir-tree
+::
+    :caption: dir tree
 
     docs/
     src/
@@ -23,7 +25,7 @@ create a `docs` directory. Your dirtree must look like this:
     └── ...
     main.py
 
-Then initialize Sphinx inside the `docs` directory using:
+Then initialize Sphinx inside the ``docs`` directory using:
 
 .. code-block:: bash
 
@@ -41,11 +43,9 @@ This command will ask you for:
 
 #. ``> Project languaje [en]:`` en
 
-After this you'll have the following dirtree inside `docs`:
+After this you'll have the following dirtree inside ``docs``:
 
-.. code-block::
-    :caption: Dir tree after Sphinx init
-    :name: dir-tree-after-sphinx-init
+::
     
     docs/
     ├── build/
@@ -57,12 +57,33 @@ After this you'll have the following dirtree inside `docs`:
     Makefile
     make.bat
 
-The `source` directory contains a collection of plain-text document sources and 
-the configuration file `conf.py`, where you can configure all aspects of how 
-Sphinx reads your sources and builds your documentation.
+The ``source`` directory contains a collection of plain-text document sources 
+and the configuration file ``conf.py``, where you can configure all aspects of 
+how Sphinx reads your sources and builds your documentation.
 
-The `build` directory contains the automathic generated documentation in the 
-format that you specified in the `conf.py` file (for example html, LaTeX, etc).
+The ``build`` directory contains the automathic generated documentation in the 
+format that you specified in the ``conf.py`` file (for example html, LaTeX,
+etc).
 
 To make life easier, some Makefiles are also in the directory. These implement 
 an standard way to building the documentation.
+
+
+Building your documentation
+===========================
+
+You can build the documentation from the files in the ``source`` dir using:
+
+.. code-block:: bash
+
+    make html
+
+If you want to further personalize your build, refer to the 
+`sphinx-build <https://www.sphinx-doc.org/en/master/man/sphinx-build.html>`__
+command documentation.
+
+
+If you are following the steps, a ``html`` directory will appear inside your 
+``build`` directory. The file that contains the (really ugly, by the way) 
+landing page of your documentation is ``index.html`` and if you open it inside 
+your web explorer you'll see that is empty.
