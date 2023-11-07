@@ -9,7 +9,6 @@ First of all, you'll need to initialize Sphinx in this project. For that,
 create a ``docs`` directory. Your dirtree must look like this:
 
 ::
-    :caption: dir tree
 
     docs/
     src/
