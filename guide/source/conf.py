@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Getting started with Sphinx'
+project = 'The ultimate Sphinx tutorial'
 copyright = '2023, Eduardo Castro'
 author = 'Eduardo Castro'
 
@@ -88,7 +88,7 @@ html_sidebars = {
 # General theme options
 html_theme_options = {
     # Logo
-    'logo': {'text': 'Getting started with Sphinx'},
+    'logo': {'text': project},
     # Upper bar icons
     'navbar_end': ['theme-switcher', 'navbar-icon-links'],
     # Icon links
