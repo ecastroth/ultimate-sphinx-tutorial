@@ -127,6 +127,8 @@ Adding the files to `index.rst`
 The `config.py` file
 --------------------
 
-Your `config.py` file must look like this:
+You can find a custom `config.py` file `here <conf.py>__`. This file adds the 
+following lines:
 
-.. literalinclude:: conf.py
+..  literalinclude:: ../_static/conf.py
+    :language: python
