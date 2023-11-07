@@ -86,3 +86,47 @@ If you are following the steps, a ``html`` directory will appear inside your
 ``build`` directory. The file that contains the (really ugly, by the way) 
 landing page of your documentation is ``index.html`` and if you open it inside 
 your web explorer you'll see that is empty.
+
+
+
+Filling up the documentation
+============================
+
+Creating the `.rst` files
+-------------------------
+
+So, you have made the effort to add docstings to your code and you've set up 
+Sphinx to build the documentation, but now, how do you connect this things 
+together?
+
+To do this, Sphinx provides a command to automatically create the re-Structured
+Text files from the documentation inside your code:
+
+.. code-block:: bash
+
+    sphinx-apidoc -o SOURCE_DIR DESTINATION_DIR
+
+where ``DESTINATION_DIR`` is the directory where the generated ``.rst`` files 
+with the documentation of the ``SOURCE_DIR`` are going to be saved. Normally, 
+you want the ``DESTINATION_DIR`` to be something as 
+``docs/source/_MODULE_autodoc`` where ``MODULE`` is the name of the module 
+you're documenting.
+
+For the case presented in this demo, you'll want to do (inside the ``docs`` 
+dir):
+
+.. code-block:: bash
+
+    sphinx-apidoc -o source/_autodoc .. 
+    sphinx-apidoc -o source/_autodoc ../src
+
+Adding the files to `index.rst`
+-------------------------------
+
+
+The `config.py` file
+--------------------
+
+Your `config.py` file must look like this:
+
+.. literalinclude:: conf.py
