@@ -28,8 +28,9 @@ author = 'Eduardo Castro'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'numpydoc',            # NumPy documentation
-    'sphinx.ext.viewcode'  # Link to local code
+    'numpydoc',             # NumPy documentation
+    'sphinx.ext.viewcode',  # Link to local code
+    'myst_parser',          # For using Markdown inside reST
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -66,6 +67,9 @@ autodoc_typehints = "none"
 # Autosummary
 autosummary_generate = True
 autosummary_generate_overwrite = True
+
+# MyST
+myst_heading_anchors = 4
 
 
 # -- Options for HTML output -------------------------------------------------
