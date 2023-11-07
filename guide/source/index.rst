@@ -3,19 +3,28 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Getting started with Sphinx's documentation!
-=======================================================
+The final Sphinx tutorial
+=========================
+
+Welcome!
+
+This html files contain a full tutorial on how to use Sphinx to document a 
+project *-with explanations for nested directoires, something with I strugle 
+when learning to use this tool-*, embed Markdown files, work with extensions
+and building a beautifull documentation for your project.
+
+I hope this documentation will be useful to your journey learning Sphinx. I've
+try my best to make this the more detailed possible and intuitive possible, 
+however if you feel that something can be improved feel free to contact me at
+`my email <ecastroth@gmail.com>_`.
+
+You can find the guides for writting docstrings and implementing Sphinx to your
+project below. Enjoy!
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
 
+   _quickstart/docstrings-guidelines
    _quickstart/getting-started
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+This tutorial was developed by Eduardo Castro.

@@ -8,27 +8,28 @@ Initializing Sphinx
 First of all, you'll need to initialize Sphinx in this project. For that, 
 create a ``docs`` directory. Your dirtree must look like this:
 
-::
+.. code-block:: none
+   :caption: Starting directory tree
 
-    docs/
-    src/
-    ├── lib1/
-    │   ├── file1.py
-    │   ├── file2.py
-    │   └── ...
-    ├── lib2/
-    │   ├── file1.py
-    │   ├── file2.py
-    │   └── ...
-    ├── file.py
-    └── ...
-    main.py
+   docs/
+   src/
+   ├── lib1/
+   │   ├── file1.py
+   │   ├── file2.py
+   │   └── ...
+   ├── lib2/
+   │   ├── file1.py
+   │   ├── file2.py
+   │   └── ...
+   ├── file.py
+   └── ...
+   main.py
 
 Then initialize Sphinx inside the ``docs`` directory using:
 
 .. code-block:: bash
 
-    sphinx-quickstart
+   sphinx-quickstart
 
 This command will ask you for:
 
@@ -40,21 +41,22 @@ This command will ask you for:
 
 #. ``> Project release []:`` Version name such as 1.0, Alpha, etc.
 
-#. ``> Project languaje [en]:`` en
+#. ``> Project language [en]:`` en
 
 After this you'll have the following dirtree inside ``docs``:
 
-::
-    
-    docs/
-    ├── build/
-    └── source/
-        ├── _static/
-        ├── _templates/
-        ├── conf.py
-        └── index.rst
-    Makefile
-    make.bat
+.. code-block:: none
+   :caption: Directory tree after Sphinx initialize
+   
+   docs/
+   ├── build/
+   └── source/
+       ├── _static/
+       ├── _templates/
+       ├── conf.py
+       └── index.rst
+   Makefile
+   make.bat
 
 The ``source`` directory contains a collection of plain-text document sources 
 and the configuration file ``conf.py``, where you can configure all aspects of 
@@ -75,7 +77,7 @@ You can build the documentation from the files in the ``source`` dir using:
 
 .. code-block:: bash
 
-    make html
+   make html
 
 If you want to further personalize your build, refer to the 
 `sphinx-build <https://www.sphinx-doc.org/en/master/man/sphinx-build.html>`__
@@ -92,8 +94,8 @@ your web explorer you'll see that is empty.
 Filling up the documentation
 ============================
 
-Creating the `.rst` files
--------------------------
+Creating the ``.rst`` files
+---------------------------
 
 So, you have made the effort to add docstings to your code and you've set up 
 Sphinx to build the documentation, but now, how do you connect this things 
@@ -104,7 +106,7 @@ Text files from the documentation inside your code:
 
 .. code-block:: bash
 
-    sphinx-apidoc -o SOURCE_DIR DESTINATION_DIR
+   sphinx-apidoc -o SOURCE_DIR DESTINATION_DIR
 
 where ``DESTINATION_DIR`` is the directory where the generated ``.rst`` files 
 with the documentation of the ``SOURCE_DIR`` are going to be saved. Normally, 
@@ -117,18 +119,38 @@ dir):
 
 .. code-block:: bash
 
-    sphinx-apidoc -o source/_autodoc .. 
-    sphinx-apidoc -o source/_autodoc ../src
-
-Adding the files to `index.rst`
--------------------------------
+   sphinx-apidoc -o source/_autodoc .. 
+   sphinx-apidoc -o source/_autodoc ../src
 
 
-The `config.py` file
---------------------
+The ``conf.py`` file
+----------------------
 
-You can find a custom `config.py` file `here <conf.py>__`. This file adds the 
-following lines:
+.. warning:: This section is currently in development
 
-..  literalinclude:: ../_static/conf.py
-    :language: python
+To make your documentation look nice, you want to use a custom ``conf.py`` 
+file like the following:
+
+.. literalinclude:: ../_static/conf.py
+   :caption: conf.py
+   :language: python
+   :lineno-start: 1
+   :emphasize-lines: 13-15, 34-35, 46-47, 50, 52-55, 57-67, 69-71, 79, 86-89, 91-105
+   :name: conf.py
+
+Where the lines that differ from the default ``conf.py`` file generated when 
+initializing Sphinx are emphasized.
+
+So, what do this lines mean?
+
+
+Customizing the ``conf.py`` file
+################################
+
+.. warning:: This section is currently in development
+
+
+Adding the files to ``index.rst``
+---------------------------------
+
+.. warning:: This section is currently in development
