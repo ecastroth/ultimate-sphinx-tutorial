@@ -6,9 +6,9 @@ def someFuntion():
 
 class SomeClass():
     """Some docstrings for the constructor of a class inside File 2, Library 1"""
-    def __init__():
+    def __init__(self):
         pass
 
-    def someMethod():
+    def someMethod(self):
         """Some docstrings for a method inside a class from File 2, Library 1"""
         pass
