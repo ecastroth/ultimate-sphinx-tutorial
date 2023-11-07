@@ -5,7 +5,7 @@ Initializing Sphinx
 First of all, you'll need to initialize Sphinx in this project. For that, 
 create a `docs` directory. Your dirtree must look like this:
 
-.. code-block:: none
+.. code-block::
     :caption: Original dir tree
     :name: original-dir-tree
 
@@ -43,8 +43,7 @@ This command will ask you for:
 
 After this you'll have the following dirtree inside `docs`:
 
-```
-.. code-block:: none
+.. code-block::
     :caption: Dir tree after Sphinx init
     :name: dir-tree-after-sphinx-init
     
