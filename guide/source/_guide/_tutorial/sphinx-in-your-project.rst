@@ -123,6 +123,8 @@ configurations affect your docuementation, you can read the tangent on:
 Creating the ``.rst`` to the code files
 ---------------------------------------
 
+.. warning:: This section is currently in development
+
 So, you have made the effort to add docstings to your code and you've set up 
 Sphinx to build the documentation, but now, how do you connect this things 
 together?
