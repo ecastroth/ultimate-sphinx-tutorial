@@ -10,8 +10,8 @@ import src.lib2.file2 as l2f2
 def someFunctionThatUsesThePackages():
     """Some docstrgins for a function that uses the elements of the lib1 and 
     lib2 packages"""
-    a = l1f1.SomeClass()
+    a = l1f1.someFunction
     b = l2f1.SomeClass()
-    c = l1f2.someFuntion()
-    d = l2f2.someFuntion()
+    c = l1f2.SomeClass()
+    d = l2f2.someFuntion
     return a, b, c, d
