@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath(os.path.join('..', '..')))
 
 # -- Project information -----------------------------------------------------
 
-project = 'sphinx-documentation-demo'
+project = 'The ultimate Sphinx tutorial'
 copyright = '2023, Eduardo Castro'
 author = 'Eduardo Castro'
 
