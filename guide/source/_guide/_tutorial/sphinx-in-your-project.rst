@@ -123,14 +123,13 @@ configurations affect your docuementation, you can read the tangent on:
 Creating the ``.rst`` to the code files
 ---------------------------------------
 
-.. warning:: This section is currently in development
-
 So, you have made the effort to add docstings to your code and you've set up 
 Sphinx to build the documentation, but now, how do you connect this things 
 together?
 
-To do this, Sphinx provides a command to automatically create the 
-reStructuredText files from the documentation inside your code:
+To do this, Sphinx needs to import successfully the files with your code. For 
+this purpose, Sphinx provides a command to automatically create the 
+reStructuredText files for every file in your code:
 
 .. code-block:: bash
 
@@ -141,13 +140,63 @@ from the ``SOURCE_DIR`` are going to be saved. Normally, you want the
 ``DESTINATION_DIR`` to be something as ``docs/source/_MODULE_autodoc`` where 
 ``MODULE`` is the name of the module you're documenting.
 
+It's important to note that this command works recursively only with packages 
+i.e. modules inside a directory with a ``__init__.py`` file created.
+
 For the case presented in this demo, you'll want to do (inside the ``docs`` 
 dir):
 
 .. code-block:: bash
 
    sphinx-apidoc -o source/_autodoc .. 
-   sphinx-apidoc -o source/_autodoc ../src
+
+You'll notice that a ``_autodoc`` dir has appeared inside the ``source`` 
+directory. As you can see only the main module has been detected and a 
+``modules.rst`` file has appeared with a list of the different files in the 
+directory. 
+
+.. code-block:: none
+   :caption: Directory tree after Sphinx ApiDoc
+   
+   docs/
+   ├── build/
+   └── source/
+      ├── _autodoc/
+      │   ├── main.rst
+      │   └── modules.rst
+      ├── _static/
+      ├── _templates/
+      ├── conf.py
+      └── index.rst
+
+To see the difference, you may want to retry adding a ``__init__.py``file to 
+the src directory. Now, this directory will be recognized as a package and the
+files ``src.rst``, ``src.lib1.rst``, ``src.lib2.rst`` will appear on the 
+``_autodoc`` dir.
+
+.. code-block:: none
+   :caption: Directory tree after Sphinx ApiDoc adding a ``__init__.py`` file
+   
+   docs/
+   ├── build/
+   └── source/
+      ├── _autodoc/
+      │   ├── main.rst
+      │   ├── modules.rst
+      │   ├── src.lib1.rst
+      │   ├── src.lib2.rst
+      │   └── src.rst
+      ├── _static/
+      ├── _templates/
+      ├── conf.py
+      └── index.rst
+
+If you open this files, you'll see that they are standard ``.rst`` files that 
+can be modified without problem. You can add text to them aswell as any other 
+element supported by reStructuredText.
+
+Now that the source files are allready build, you can delete the extra 
+``__init__.py`` file that you created.
 
 
 Adding the files to ``index.rst``
