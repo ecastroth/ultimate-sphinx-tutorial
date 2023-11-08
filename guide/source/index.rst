@@ -24,7 +24,7 @@ project below. Enjoy!
 .. toctree::
    :maxdepth: 1
 
-   _quickstart/docstrings-guidelines
-   _quickstart/getting-started
+   _guide/_styleguides/docstrings-guidelines
+   _guide/_tutorial/sphinx-in-your-project
 
 This tutorial was developed by Eduardo Castro.
