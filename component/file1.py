@@ -10,7 +10,7 @@ def someFunctionThatUsesThePackages():
     lib2 packages"""
     p1f1.someFunction(1, 2)
     p1f2.someFunction1()
-    p1f2.SomeClass1().someMethod1()
+    p1f2.SomeClassA().someMethod1()
     print('Correct!')
 
 if __name__ == '__main__':

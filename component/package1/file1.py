@@ -13,6 +13,7 @@ a line by itself, preferably preceded by a blank line.
 import os  
 
 from .subpackage1.subfile1 import someFunction as someFunctionf1sp1
+from .subpackage2.subfile1 import someFunction as someFunctionf1sp2
 
 
 def someFunction(var1, var2, *args, long_var_name="hi", only_seldom_used_keyword=0, **kwargs):
@@ -110,3 +111,4 @@ def someFunction(var1, var2, *args, long_var_name="hi", only_seldom_used_keyword
     # after closing the docstring.
     os.sep
     someFunctionf1sp1(1, 2)
+    someFunctionf1sp2(1, 2)
