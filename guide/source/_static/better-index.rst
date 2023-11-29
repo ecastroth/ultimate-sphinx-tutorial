@@ -19,7 +19,46 @@ documentation. Feel free to explore!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Useful links
+   :hidden:
 
    _userguide/introduction
    _apireference/introduction
+
+
+.. grid::
+
+   .. grid-item-card:: 
+      :text-align: center
+      :shadow: sm
+
+      **User guide**
+      ^^^^^^^^^^^^^^
+
+      The user guide provides in-depth information on the key concepts of the
+      features with useful background information and explanation.
+
+      ++++++++++
+
+      .. button-ref:: _userguide/introduction
+         :color: primary
+         :expand:
+
+         To the User guide
+
+   .. grid-item-card::
+      :text-align: center
+      :shadow: sm
+
+      **API Reference**
+      ^^^^^^^^^^^^^^^^^
+
+      The reference guide contains a detailed description of the functions, 
+      modules, and objects included in this project.
+
+      ++++++++++
+
+      .. button-ref:: _apireference/introduction
+         :color: primary
+         :expand:
+
+         To the API Reference
