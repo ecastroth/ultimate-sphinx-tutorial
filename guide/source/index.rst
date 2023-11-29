@@ -25,11 +25,31 @@ project below. Enjoy!
    :maxdepth: 1
    :hidden:
 
+   _guide/installation-guide
    _guide/_styleguides/docstrings-guidelines
    _guide/_tutorial/sphinx-in-your-project
 
 
 .. grid::
+
+   .. grid-item-card:: 
+      :text-align: center
+      :shadow: sm
+
+      **Installation guide**
+      ^^^^^^^^^^^^^^
+
+      This section states how to install all the necessary dependencies to 
+      follow the guide.
+
+      ++++++++++
+
+      .. button-ref:: _guide/installation-guide
+         :color: primary
+         :expand:
+
+         To the Installation guide
+
 
    .. grid-item-card:: 
       :text-align: center
@@ -48,6 +68,7 @@ project below. Enjoy!
          :expand:
 
          To the Docstring primer
+
 
    .. grid-item-card::
       :text-align: center
