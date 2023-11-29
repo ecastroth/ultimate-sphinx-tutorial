@@ -66,9 +66,9 @@ As you can see, the :ref:`conf.py` file ads a section for theme customization.
 You can find a full description of the configuration posibilities on the 
 `User Guide <https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/index.html>`_.
 
-The configuration regarding the configuration of the theme founded on the 
-:ref:`conf.py` contains two main sections. The lines 93 to 96 configures the 
-**left sidebar**,
+The configuration lines regarding the configuration of the theme founded on the 
+:ref:`conf.py` are divided into two main sections. Lines 93 to 96 configures 
+the **left sidebar**,
 
 .. literalinclude:: ../../_static/conf.py
    :caption: conf.py lines 93 to 96
@@ -92,12 +92,13 @@ On the other hand, lines 98 to 112 adds some **little tweaks**:
    :lineno-start: 98
 
 * Line 101 sets the title of the documentation (on the left upper corner). In 
-  this guide, the text logo is "The ultimate Sphinx tutorial".
+  this guide, the text logo is the same name used for the project: "Demorepo".
+  Note that it can also be an image.
 * Line 103 adds the light/black theme color switch and a icon bar with links to
   the upper navigation bar.
 * Lines 105 to 112 configure the icons to display on the upper right corner, as
   you can see, a GitHub icon is added with a link to the repository of this 
-  guide
+  guide.
 
 
 Extensions
@@ -120,8 +121,8 @@ see the extensions used are listed on the lines 33 to 37:
    :lineno-start: 34
    :name: extension-list
 
-Extensions allow for custom/further configuration, in the :ref:`conf.py` file, 
-it can be found on the section from line 51 to 75:
+Extensions normally allow further configuration of its features, in the 
+:ref:`conf.py` file, it can be found on the section from line 51 to 75:
 
 .. literalinclude:: ../../_static/conf.py
    :caption: conf.py lines 51 to 75
@@ -135,11 +136,11 @@ it can be found on the section from line 51 to 75:
 Built-in extensions
 -------------------
 
-A rule of thumb to catch which extensions are built-in with sphinx, is that its
+A rule of thumb to know which extensions are built-in with sphinx, is that its
 names allways begin with ``sphinx.ext.NAME``, where ``NAME`` is the name of the
 extension. On the config file, 3 built-in extensions are activated *(The first 
 one explicitly becouse its in the list and the other two implicitly as their
-activated by the use of* ``numpydocs`` *)*:
+activated by the use of the* ``numpydocs`` *extension)*:
 
 .. note:: 
    A full list of Sphinx built-in extensions and links to its 
@@ -147,19 +148,22 @@ activated by the use of* ``numpydocs`` *)*:
    `here <https://www.sphinx-doc.org/en/master/usage/extensions/index.html#built-in-extensions>`_.
 
 
-``sphinx.ext.viewcode``
-^^^^^^^^^^^^^^^^^^^^^^^
+1. ``sphinx.ext.viewcode``
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This extension allow for the ``Show Source`` button to appear on the right 
 sidebar. This extension does not have any extra configuration on the 
 :ref:`extension-config`.
 
-``sphinx.ext.autosummary``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+You can find further information of this extension on the 
+`viewcode documentation page <https://www.sphinx-doc.org/en/master/usage/extensions/viewcode.html>`_.
 
-This extension generates function/method/attribute summary lists and its 
-especially useful when your docstrings are long and detailed, and putting each 
-one of them on a separate page makes them easier to read.
+2. ``sphinx.ext.autosummary``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This extension generates function/method/attribute summary lists or files and 
+its especially useful when your docstrings are long and detailed, and putting 
+each one of them on a separate page makes them easier to read.
 
 The configuration of this extension can be found on lines 70 to 72 on 
 :ref:`extension-config`:
@@ -171,11 +175,15 @@ The configuration of this extension can be found on lines 70 to 72 on
 You can find further information of this extension on the 
 `autosummary documentation page <https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html>`_.
 
-``sphinx.ext.autodoc``
-^^^^^^^^^^^^^^^^^^^^^^
+3. ``sphinx.ext.autodoc``
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This extension import the modules you are documenting, and pull in 
 documentation from docstrings in a automatic way.
+
+.. warning:: Some common error founded when using ``autodoc`` is that the 
+   extension is unable to import the modules or packages with your code. This
+   behavior can be disabled on the ``conf.py`` file.
 
 The configuration of this extension can be found on lines 58 to 68 on
 :ref:`extension-config`:
@@ -185,14 +193,14 @@ The configuration of this extension can be found on lines 58 to 68 on
    The default options for autodoc directives. They are applied to all autodoc 
    directives automatically. 
 
-   ``members``: 
+*  ``members``: 
       autodoc will generate document for the members of the target module,
       class or exception (recursively)
 
-   ``undoc-members``:
+*  ``undoc-members``:
       autodoc will not generate document for the members not having docstings
 
-   ``private-members``: 
+*  ``private-members``: 
       autodoc will also generate document for the private members
 
 * ``autodoc_typehints``: 
@@ -207,10 +215,10 @@ Thrid-parties extensions
 
 Only two third party extensions are used on the config file:
 
-``numpydoc``
-^^^^^^^^^^^^
+1. ``numpydoc``
+^^^^^^^^^^^^^^^
 
-This extension provides support for the Numpy docstring format in Sphinx.
+This extension provides support for the Numpy docstring standard in Sphinx.
 
 The configuration of this extension can be found on lines 53 to 56 on 
 :ref:`extension-config`:
@@ -229,14 +237,15 @@ You can find more information about this extension in the
 `NumpyDocs documentation <https://numpydoc.readthedocs.io/en/latest/index.html>`_.
 
 
-``myst-parser``:
-^^^^^^^^^^^^^^^^
+2. ``myst-parser``
+^^^^^^^^^^^^^^^^^^
 
-Translate Markdown files to reStructuredText files, allowing the use of `.md` 
-files into the documentation. An example of this can be found on the use of the
-file :doc:`How to write DocStrings <../_styleguides/docstrings-guidelines>`. 
-Possibly you didn't even notice, but if you see the source code you'll see its
-a Markdown file!
+This extension translates Markdown files to reStructuredText files, allowing 
+for the use of `.md` files into your documentation. An example of this can be 
+found on the use of the file 
+:doc:`How to write DocStrings <../_styleguides/docstrings-guidelines>`. 
+Possibly you didn't even notice, but if you see the source code you'll see 
+**its a Markdown file!**
 
 The only configuration on the :ref:`extension-config` regarding this extension
 is found on line 75. ``myst_heading_anchors`` is used only for Markdown header
