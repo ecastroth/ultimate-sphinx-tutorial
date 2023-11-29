@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath(os.path.join('..', '..')))
 
 # -- Project information -----------------------------------------------------
 
-project = 'sphinx-documentation-demo'
+project = 'Demorepo'
 copyright = '2023, Eduardo Castro'
 author = 'Eduardo Castro'
 
@@ -31,9 +31,10 @@ release = '1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'numpydoc',            # NumPy documentation
-    'sphinx.ext.viewcode'  # Link to local code
-    'myst_parser',         # For using Markdown inside reST
+    'numpydoc',             # NumPy documentation
+    'sphinx.ext.viewcode',  # Link to local code
+    'myst_parser',          # For using Markdown inside reST
+    'sphinx_design',        # To add buttons and cards
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -98,7 +99,7 @@ html_sidebars = {
 # General theme options
 html_theme_options = {
     # Logo
-    'logo': {'text': 'Demo Title'},
+    'logo': {'text': project},
     # Upper bar icons
     'navbar_end': ['theme-switcher', 'navbar-icon-links'],
     # Icon links

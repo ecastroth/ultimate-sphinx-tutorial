@@ -1,4 +1,4 @@
-"""Docstring for the file.py module.
+"""Docstring for the file1.py module.
 
 Modules names should have short, all-lowercase names.  The module name may
 have underscores if this improves readability.
@@ -10,28 +10,10 @@ a line by itself, preferably preceded by a blank line.
 
 """
 
-import os  # standard library imports first
+import os  
 
-# Do NOT import using *, e.g. from numpy import *
-#
-# Import the module using
-#
-#   import numpy
-#
-# instead or import individual functions as needed, e.g
-#
-#  from numpy import array, zeros
-#
-# If you prefer the use of abbreviated module names, we suggest the
-# convention used by NumPy itself::
-
-#import numpy as np
-#import matplotlib as mpl
-#import matplotlib.pyplot as plt
-
-# These abbreviated names are not to be used in docstrings; users must
-# be able to paste and execute docstrings after importing only the
-# numpy module itself, unabbreviated.
+from .subpackage1.subfile1 import someFunction as someFunctionf1sp1
+from .subpackage2.subfile1 import someFunction as someFunctionf1sp2
 
 
 def someFunction(var1, var2, *args, long_var_name="hi", only_seldom_used_keyword=0, **kwargs):
@@ -128,4 +110,5 @@ def someFunction(var1, var2, *args, long_var_name="hi", only_seldom_used_keyword
     # But for function, method and module, there should be no blank lines
     # after closing the docstring.
     os.sep
-    pass
+    someFunctionf1sp1(1, 2)
+    someFunctionf1sp2(1, 2)

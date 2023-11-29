@@ -1,4 +1,4 @@
-name: sphinx-documentation-demo
+name: sphinx-demo
 
 dependencies:
     - python=3.11.5
@@ -7,3 +7,6 @@ dependencies:
       - Sphinx==5.0.2
       - numpydoc==1.6.0
       - pydata-sphinx-theme==0.14.3
+      - myst-parser==2.0.0
+      - sphinx_design==0.5.0
+      - sphinx-copybutton==0.5.2
