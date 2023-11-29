@@ -1,5 +1,5 @@
 =======================================
-Adding and using Sphinx in your project
+Adding Sphinx to your project
 =======================================
 
 This page contains a step-by-step tutorial on how to add Sphinx to your project
@@ -11,13 +11,24 @@ in a basic way. Also, I include:
 *  :doc:`A further look on the conf.py file <conf-deeper-look>`: An optional 
    tangent on how the ``conf.py`` file works and some of the tweaks used for 
    this tutorial.
+*  :doc:`A further look on the templates files <temp-deeper-look>`: An optional 
+   tangent on how the ``templates.rst`` files are written and its use in this
+   tutorial.
 
 
 .. toctree::
+   :caption: Main tutorials
    :hidden:
 
+   self
    to-the-next-level
+
+.. toctree::
+   :caption: Optional tangents
+   :hidden:
+
    conf-deeper-look
+   temp-deeper-look
 
 
 Initializing Sphinx
@@ -137,7 +148,7 @@ and many more; you'll need to use a custom ``conf.py`` file like the following:
    :caption: conf.py
    :language: python
    :lineno-start: 1
-   :emphasize-lines: 13-15, 34-36, 47-48, 51-75, 83, 91-
+   :emphasize-lines: 13-15, 34-37, 48-49, 52-76, 84, 92-
 
 Where the lines that differ from the default ``conf.py`` file generated when 
 initializing Sphinx are emphasized. 
