@@ -10,8 +10,8 @@ Welcome!
 
 This html files contain a full tutorial on how to use Sphinx to document a 
 project *-with explanations for nested directoires, something I struggle with
-when learning to use this tool-*, embed Markdown files, work with extensions
-and building a beautifull documentation for your project.
+when I was learning how to use this tool-*, embed Markdown files, work with 
+extensions and building a beautifull documentation for your project.
 
 I hope this documentation will be useful to your journey learning Sphinx. I've
 try my best to make this the more detailed possible and intuitive possible, 

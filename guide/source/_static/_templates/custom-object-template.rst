@@ -1,4 +1,4 @@
-{{ name }} {{ objtype[0]|upper }}{{ objtype[1:] }}
+{{ name }} {{ objtype[0] | upper }}{{ objtype[1:] }}
 {{ underline }}
 
 .. currentmodule:: {{ module }}

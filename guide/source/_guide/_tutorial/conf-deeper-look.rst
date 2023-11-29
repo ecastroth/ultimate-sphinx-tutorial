@@ -2,7 +2,7 @@
 Deeper look on the conf.py file
 ===============================
 
-So, the custom file we recommend in 
+So, the custom ``conf.py`` file I recommend in 
 :doc:`Adding and using Sphinx in your project <sphinx-in-your-project>`
 is:
 

@@ -22,7 +22,7 @@ Some text giving context for the subpackages in the package
 
 .. toctree::
    :maxdepth: 1
-   :caption: Subpackages
+   :caption: Subpackage index
 
    component.package1.subpackage1
    component.package1.subpackage2
