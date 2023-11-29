@@ -31,6 +31,8 @@ extensions = [
     'numpydoc',             # NumPy documentation
     'sphinx.ext.viewcode',  # Link to local code
     'myst_parser',          # For using Markdown inside reST
+    'sphinx_design',        # To add buttons and cards
+    'sphinx_copybutton',    # Add the "copy to clipboard" button on code cells
 ]
 
 # Add any paths that contain templates here, relative to this directory.
