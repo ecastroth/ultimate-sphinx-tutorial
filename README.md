@@ -1,5 +1,7 @@
 # The ultimate Sphinx tutorial
 
+[![Documentation Status](https://readthedocs.org/projects/the-ultimate-sphinx-tutorial/badge/?version=latest)](https://the-ultimate-sphinx-tutorial.readthedocs.io/en/latest/?badge=latest)
+
 This repository contains the necessary information to generate [PEP257](https://peps.python.org/pep-0257/) and [NumpyDocs](https://numpydoc.readthedocs.io/en/latest/index.html) compliant automathic documentation of projects with nested packages using Sphinx. It's thinked to serve as a demo for a real repository.
 
 ## Tutorials
@@ -15,10 +17,10 @@ This guide contains the following sections.
 ### A practic guide on how to add Sphinx to your project
 - How initialize Sphinx in your project.
 - How to build documentation.
-- How the `conf.py` works:
 - Detail explanations to understand how the `conf.py` file works.
 - Theme selection and customization.
 - Activate built-in or third party extensions.
+- Add support for markdown files.
 - Detail explanations to understand how the `conf.py` file works.
 - Translate docstrings in your code to reStructuredText files.
 - Dealing with nested packages or modules.
