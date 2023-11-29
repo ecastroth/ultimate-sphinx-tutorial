@@ -15,10 +15,13 @@ On this demo repository there is only one level main script, it will be usefull
 that this file has a quick start guide on the 
 :doc:`User Guide <../_userguide/introduction>`.
 
-.. toctree::
-   :maxdepth: 1
+.. currentmodule:: component
 
-   component.file1
+.. autosummary:: 
+   :template: custom-module-template.rst
+   :toctree: _generated
+
+   file1
 
 
 Packages
