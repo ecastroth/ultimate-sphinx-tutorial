@@ -163,5 +163,5 @@ cython_debug/
 .DS_Store
 
 # Unused documentation directories
-docs
+docs*
 build
