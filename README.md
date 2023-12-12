@@ -8,15 +8,34 @@ You can find the guide [here](http://the-ultimate-sphinx-tutorial.rtfd.io/).
 
 ## Tutorials
 
-This guide contains the following sections.
+This guide contains the following sections:
 
-### A primer on docstrings
-- What is a docstring.
-- How to write correctly formatted docstrings.
-- What is reStructuredText.
-- How to write some simple reStructuredText files.
+### 1. Installation guide
+Instructions on how to download the repository and install the necessary dependencies to follow the guide.
 
-### A practic guide on how to add Sphinx to your project
+### 2. Style guidelines
+Guides for writing more readable code and adding Sphinx NumpyDocs formated docstrings.
+
+- **Code style guidelines**
+
+    - General layout of the code.
+    - String quotes.
+    - Whitespaces in expresions and statements.
+    - Comments.
+    - Naming conventions.
+    - Programming recommendations.
+    - Type hints and annotations.
+
+
+- **Docstrings guidelines**
+
+    - What is a docstring.
+    - How to write correctly formatted docstrings.
+    - What is reStructuredText.
+    - How to write some simple reStructuredText files.
+
+
+### 3. A practic guide on how to add Sphinx to your project
 - How initialize Sphinx in your project.
 - How to build documentation.
 - Detail explanations to understand how the `conf.py` file works.
