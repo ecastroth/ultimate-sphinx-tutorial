@@ -31,4 +31,4 @@ This guide contains the following sections.
 - A primer on the Jinja template engine.
 - Sphinx support for Jinja.
 
-Developed by Eduardo Castro.
+**Developed by Eduardo Castro.**
