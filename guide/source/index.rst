@@ -18,16 +18,18 @@ try my best to make this the more detailed possible and intuitive possible,
 however if you feel that something can be improved feel free to contact me at
 `my email <ecastroth@gmail.com>`_.
 
-You can find the guides for writting docstrings and implementing Sphinx to your
-project below. Enjoy!
+You can find the guides for installing the necessary elements of the guide, 
+writting code and docstrings, implementing Sphinx to your project and uploading
+it to Read the Docs below. Enjoy!
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
    _guide/installation-guide
-   _guide/_styleguides/docstrings-guidelines
+   _guide/_styleguides/introduction
    _guide/_tutorial/sphinx-in-your-project
+   _guide/rtd-support
 
 
 .. grid::
@@ -37,7 +39,7 @@ project below. Enjoy!
       :shadow: sm
 
       **Installation guide**
-      ^^^^^^^^^^^^^^
+      ^^^^^^^^^^^^^^^^^^^^^^
 
       This section states how to install all the necessary dependencies to 
       follow the guide.
@@ -55,20 +57,22 @@ project below. Enjoy!
       :text-align: center
       :shadow: sm
 
-      **Docstrings primer**
-      ^^^^^^^^^^^^^^
+      **Style guidelines**
+      ^^^^^^^^^^^^^^^^^^^^
 
-      This section states how to write docstrings in your code in a way that 
-      Sphinx can recognize them automatically.
+      This section contains the guidelines for writting more understandable 
+      code and docstrings that can be recognized by Sphinx automatically.
 
       ++++++++++
 
-      .. button-ref:: _guide/_styleguides/docstrings-guidelines
+      .. button-ref:: _guide/_styleguides/introduction
          :color: primary
          :expand:
 
-         To the Docstring primer
+         To the Style guidelines
 
+
+.. grid::
 
    .. grid-item-card::
       :text-align: center
@@ -87,3 +91,24 @@ project below. Enjoy!
          :expand:
 
          To Adding Sphinx
+
+
+   .. grid-item-card:: 
+      :text-align: center
+      :shadow: sm
+
+      **Using Read the Docs**
+      ^^^^^^^^^^^^^^^^^^^^^^^
+
+      This section teach you how to upgrade your documentation uploading it to
+      Read the Docs without giving it access to your GitHub account but not 
+      lossing automatic updates.
+
+      ++++++++++
+
+      .. button-ref:: _guide/rtd-support
+         :color: primary
+         :expand:
+
+         To using Read the Docs
+
