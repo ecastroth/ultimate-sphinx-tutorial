@@ -1,5 +1,5 @@
 {{ name }} {{ objtype[0] | upper }}{{ objtype[1:] }}
-{{ underline }}
+{{ '=' * ( (name + objtype) | length + 1 ) }}
 
 .. currentmodule:: {{ module }}
 
