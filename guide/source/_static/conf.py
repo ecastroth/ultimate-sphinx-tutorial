@@ -93,7 +93,8 @@ html_static_path = ['_static']
 
 # Sidebar configuration
 html_sidebars = {
-    "**": ["search-field.html", "sidebar-nav-bs.html"]
+    "**": ["search-field.html", "sidebar-nav-bs.html"],
+    'index': []
     }
 
 # General theme options
